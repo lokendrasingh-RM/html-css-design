@@ -1,0 +1,177 @@
+*
+{
+padding: 0;
+margin: 0;
+font-family: 'po', sans-serif;
+box-sizing: border-box;
+}
+body
+{
+width: 100%;
+height: 100vh;
+/* display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center; */
+
+}
+
+.full-boxx{
+    width: 100%;
+    height: 85vh;
+    background: url(../img/arr.png);
+    
+    background-color: #ffffff;
+
+background-repeat: no-repeat;
+background-size: contain;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box img{
+    width: 40%;
+    height: auto;
+}
+
+.box
+{
+width: 300px;
+height: 450px;
+background-color: transparent;
+text-align: center;
+box-sizing: border-box;
+padding: 30px;
+border-radius: 20px;
+transition: 0.5s;
+margin-right: 20px;
+cursor: pointer;
+position: relative;
+}
+.box:hover
+{
+box-shadow: 0px 0px 25px #999999;
+background-color: #fff;
+}
+.box h2
+{
+font-size: 22px;
+font-weight: 700;
+letter-spacing: 2px;
+}
+.box p
+{
+font-size: 16px;
+font-weight: 400;
+line-height: 30px;
+color: #7a7a7a;
+padding-top: 15px;
+}
+
+.fa-solid{
+    background-color: #ffffff;
+    color: #fe4c1c;
+    border-radius: 50%;
+    padding: 10px;
+    /* height: 10px;
+    width: 10px; */
+    justify-content: center;
+}
+
+.box button
+{
+/* width: 180px; */
+width: 165px;
+height: 55px;
+border-radius: 40px;
+border: none;
+/* margin-left: 20px; */
+color: #fff;
+font-weight: bolder;
+background-color: #fe4c1c;
+font-size: 18px;
+border: 1px solid #fe4c1c;
+cursor: pointer;
+box-shadow: 12px 12px 20px 0 rgb(254 76 28 / 30%);
+transition: 0.5s;
+position: absolute;
+overflow: hidden;
+/* padding: 1px; */
+top: 480px;
+left: 65px;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: hidden;
+}
+.box button:before
+{
+content: '';
+position: absolute;
+width: 70%;
+height: 55px;
+top: 0;
+transition: .8s;
+left: -150%;
+bottom: 0;
+background: linear-gradient(to left, rgb(255 255 255 / 25%), transparent);
+}
+.box button:hover
+{
+box-shadow: none;
+}
+.box button:hover:before
+{
+left: 70%;
+}
+.box:hover button
+{
+position: absolute;
+top: 420px;
+left: 65px;
+transition: 0.5s;
+visibility: visible;
+}
+.box ion-icon
+{
+background-color: #fff;
+padding: 10px;
+border-radius: 50%;
+color: #fe4c1c;
+margin-left: 10px;
+}
+
+
+
+@media(min-width:810px) and (max-width:1290px){
+    .box
+        {
+        width: 350px;
+        height: 400;
+        padding: 40px;
+        margin: 40px;
+
+        }
+
+    .box h2
+            {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            }
+        
+     .box img{
+                width: 40%;
+                /* height: 40%; */
+            }
+     
+            .box button{
+                margin-left: 30px;
+            }
+}
+
